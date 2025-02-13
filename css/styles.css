@@ -47,3 +47,22 @@ header nav ul{
     padding: 0 1rem;
     display: flex;
 }
+
+.footer-andar-1 i {
+    color: green;
+}
+.footer-andar-1 i:hover {
+    color: rgb(112, 224, 68);
+}
+.footer-andar-2 ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-andar-2 ul a:hover {
+    color: green;
+}
+
+.footer-andar-2 ul {
+    line-height: 2;
+}
