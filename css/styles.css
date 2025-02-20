@@ -15,6 +15,9 @@ html, body, #wrap {
 
 #wrap {
 
+    display: flex;
+    flex-direction: column;
+    
 
 }
 
@@ -69,6 +72,7 @@ header nav ul{
 .footer-andar-2 ul {
     line-height: 2;
 }
+
 
 
 /*
@@ -129,4 +133,9 @@ header nav ul{
     pointer-events: all; /* Habilita o botão */
     background-color: rgb(0, 77, 128); /* Cor de fundo */
     cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    
 }
