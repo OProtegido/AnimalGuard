@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Carrega o CSS da página-->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cadastro.css">
     <!-- Meta tags para SEO -->
     <meta name="author" content="Brendo Lima">
     <meta name="keyword" content="cão, gato, pet, saúde, pelos, patas">
@@ -16,7 +15,7 @@
     <!--Componentes do Bootstrap-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <title>Animal Guard - Faça contato</title>
+    <title>Animal Guard</title>
 </head>
 
 <body>
@@ -56,8 +55,8 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">SOBRE</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="empresa.html">A EMPRESA</a></li>
-                                <li><a class="dropdown-item" href="osite.html">O SITE</a></li>
+                                <li><a class="dropdown-item" href="empresa.html">SOBRE A EMPRESA</a></li>
+                                <li><a class="dropdown-item" href="osite.html">SOBRE O SITE</a></li>
                                 <li><a class="dropdown-item" href="privacidade.html">PRIVACIDADE</a></li>
                                 <li><a class="dropdown-item" href="contatos.html">CONTATOS</a></li>
                             </ul>
@@ -90,82 +89,28 @@
 
 
         <!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
-        <main class="container flex-grow-1 d-flex">
-            <div class="row">
-                <article class="col-12 col-md-9">
-
-
-                    <h2>Faça o cadastro do seu pet!</h2>
-
-                    <p>Registre seu Pet aqui!</p>
-
-                    <form action="processa.html" method="get" id="formCadastro">
-
-                        <p>
-                            <label for="campoNome">Nome:</label>
-                            <input type="text" name="nome" id="campoNome" placeholder="Nome do Pet" minlenght="3"
-                                required>
-                        </p>
-
-
-                        <p>
-                            <label for="campoEspecie">Espécie:</label>
-                            <input type="text" name="especie" id="campoEspecie" placeholder="Espécie do Pet" required>
-
-                        </p>
-
-                        <p>
-                            <label for="campoRaça">Raça (opcional):</label>
-                            <input type="text" name="Raça" id="campoRaça" placeholder="Raça do Pet" minlength="5">
-                        </p>
-
-                        <p>
-                            <label for="campoNascimento">Data de Nascimento:</label>
-                            <input type="date" name="Nascimento" id="campoNascimento" required>
-                        </p>
-
-                        <p>
-                            <label for="campoSexo">Sexo:</label>
-                            <select id="Sexo" name="Sexo" required>
-                                <option value="">Selecione</option>
-                                <option value="Macho">Macho</option>
-                                <option value="Fêmea">Fêmea</option>
-                            </select>
-                        </p>
-
-
-                        <p>
-                            <label for="campoPorte">Porte:</label>
-                            <select id="Porte" name="Porte" required>
-                                <option value="">Selecione</option>
-                                <option value="Porte">Pequeno</option>
-                                <option value="Porte">Médio</option>
-                                <option value="Porte">Grande</option>
-                            </select>
-
-                        </p>
-
-                        <p>
-                            <label for="campoNumero">Número de identificação (chip/microchip)</label>
-                            <input type="text" name="numero" id="campoNumero" placeholder="Número de identificação"
-                                required>
-
-                        </p>
-
-
-                        <p>
-                            <button type="submit">Enviar</button>
-                            <!--small>&larr; Clique somente uma vez.</small -->
-                        </p>
-
-                    </form>
+        <main class="container flex-grow-1" style="background-color: rgb(76, 184, 22); color: white;">
+        
+            <div class="row mt-4">
+                <article class="col-12">
+                    <h2>Loja de Animais</h2>
+                    <p>Confira nossos produtos disponíveis para o seu pet:</p>
+                    <div class="product">
+                        <h3>Ração Premium</h3>
+                        <p>Ração de alta qualidade para cães e gatos.</p>
+                        <button class="btn btn-primary">Comprar</button>
+                    </div>
+                    <div class="product mt-4">
+                        <h3>Brinquedos</h3>
+                        <p>Brinquedos divertidos e seguros para o seu pet.</p>
+                        <button class="btn btn-primary">Comprar</button>
+                    </div>
+                    <div class="product mt-4">
+                        <h3>Camas Confortáveis</h3>
+                        <p>Camas macias e confortáveis para o descanso do seu pet.</p>
+                        <button class="btn btn-primary">Comprar</button>
+                    </div>
                 </article>
-                <aside class="col-12 col-md-3">
-                    <h2>Tire suas dúvidas!</h2>
-                    Fique à vontade para me contar qual é a sua dúvida, e farei o possível para esclarecer tudo de forma
-                    simples e rápida.
-                    Se precisar de mais detalhes ou exemplos, estou à disposição!
-                </aside>
             </div>
         </main>
 
@@ -178,7 +123,7 @@
                     <i class="fa-solid fa-house fa-2x fa-fw"></i>
                 </a>
                 <!-- Licensa -->
-                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Animal Guard</div>
+                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Petite Guarda</div>
                 <!-- Acesso ao topo da página -->
                 <a href="#wrap" class="p-1">
                     <i class="fa-solid fa-circle-up fa-2x fa-fw"></i>
@@ -222,31 +167,33 @@
                             </a></li>
                     </ul>
                 </nav>
-                <!-- Modal e popup com formulário de busca -->
-                <dialog id="dialogFormBusca" class="pt-3 pb-3 rounded-2 border-0">
 
-
-                    <button id="closeDialog" class="float-end border-0 bg-transparent"><i
-                            class="fa-solid fa-xmark"></i></button>
-                    <h5>Procurar</h5>
-                    <form action="procurar.html" method="get" class="input-group">
-                        <input type="search" name="q" class="form-control">
-                        <button type="submit" class="btn" style="background-color: rgb(57, 155, 0); color: white;"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </dialog>
-
-                <!-- Script para fechar o moidal -->
-                <script>
-                    document.getElementById("closeDialog").addEventListener("click", () => {
-                        document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
-                    });
-                </script>
 
 
             </div>
         </footer>
     </div>
+
+    <!-- Modal e popup com formulário de busca -->
+    <dialog id="dialogFormBusca" class="pt-3 pb-3 rounded-2 border-0">
+                    
+                    
+        <button id="closeDialog" class="float-end border-0 bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+        <h5>Procurar</h5>
+        <form action="procurar.html" method="get" class="input-group">
+            <input type="search" name="q" class="form-control">
+            <button type="submit" class="btn" style="background-color: rgb(57, 155, 0); color: white;"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </dialog>
+
+    <!-- Script para fechar o moidal -->
+    <script>
+        document.getElementById("closeDialog").addEventListener("click", () => {
+            document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
+        });
+    </script>
+
 </body>
 
 </html>

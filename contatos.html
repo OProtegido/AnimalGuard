@@ -45,6 +45,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="download.html">DOWNLOAD</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">SERVIÇOS</a>
+                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="loja.html">LOJA</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">SOBRE</a>
@@ -59,7 +65,8 @@
                     <!-- Espaço entre os itens e o último ícone -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="procurar.html">
+                            <a class="nav-link" href="procurar.html"
+                                onclick="document.getElementById('dialogFormBusca').showModal(); return false;">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <span class="d-inline d-sm-none">PROCURAR</span>
                             </a>
@@ -92,10 +99,11 @@
                     <p>Preencha todos os campos para entrar em contato com a equipe "Animal Guard"</p>
 
                     <form action="processa.html" method="get" id="formContato">
-                
+
                         <p>
                             <label for="campoNome">Nome:</label>
-                            <input type="text" name="nome" id="campoNome" placeholder="Seu nome completo"minlenght="3" required>
+                            <input type="text" name="nome" id="campoNome" placeholder="Seu nome completo" minlenght="3"
+                                required>
                         </p>
 
 
@@ -107,12 +115,14 @@
 
                         <p>
                             <label for="campoAssunto">Assunto:</label>
-                            <input type="text" name="assunto" id="campoAssunto" placeholder="Assunto da mensagem" minlength="5" required>
+                            <input type="text" name="assunto" id="campoAssunto" placeholder="Assunto da mensagem"
+                                minlength="5" required>
                         </p>
 
-                        <p> 
+                        <p>
                             <label for="campoMensagem">Mensagem:</label>
-                            <textarea name="mensagem" id="campoMensagem" placeholder="Digite sua mensagem" minlength="5" required></textarea>
+                            <textarea name="mensagem" id="campoMensagem" placeholder="Digite sua mensagem" minlength="5"
+                                required></textarea>
                         </p>
 
                         <p>
@@ -182,7 +192,25 @@
                             </a></li>
                     </ul>
                 </nav>
+                <!-- Modal e popup com formulário de busca -->
+                <dialog id="dialogFormBusca" class="pt-3 pb-3 rounded-2 border-0">
+                    
+                    
+                    <button id="closeDialog" class="float-end border-0 bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+                    <h5>Procurar</h5>
+                    <form action="procurar.html" method="get" class="input-group">
+                        <input type="search" name="q" class="form-control">
+                        <button type="submit" class="btn" style="background-color: rgb(57, 155, 0); color: white;"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </dialog>
 
+                <!-- Script para fechar o moidal -->
+                <script>
+                    document.getElementById("closeDialog").addEventListener("click", () => {
+                        document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
+                    });
+                </script>
 
 
             </div>
