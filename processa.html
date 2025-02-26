@@ -55,8 +55,8 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">SOBRE</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="empresa.html">SOBRE A EMPRESA</a></li>
-                                <li><a class="dropdown-item" href="osite.html">SOBRE O SITE</a></li>
+                                <li><a class="dropdown-item" href="empresa.html">A EMPRESA</a></li>
+                                <li><a class="dropdown-item" href="osite.html">O SITE</a></li>
                                 <li><a class="dropdown-item" href="privacidade.html">PRIVACIDADE</a></li>
                                 <li><a class="dropdown-item" href="contatos.html">CONTATOS</a></li>
                             </ul>
@@ -65,8 +65,7 @@
                     <!-- Espaço entre os itens e o último ícone -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="procurar.html"
-                                onclick="document.getElementById('dialogFormBusca').showModal(); return false;">
+                            <a class="nav-link" href="procurar.html">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <span class="d-inline d-sm-none">PROCURAR</span>
                             </a>
@@ -89,21 +88,20 @@
 
 
         <!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
-        <main class="container flex-grow-1 d-flex">
-            <div class="row d-flex flex-grow-1">
-                <article class="col-12 col-md-9 flex-grow-1 p-3">
-                    <h2>Bem-vindo ao Animal Guard!</h2>
-                    Seu site de confiança para cuidar do seu pet.
+        <main class="container flex-grow-1" style="background-color: rgb(76, 184, 22); color: white;">
+            <div class="row">
+                <article class="col-12 col-md-9">
+                    <h2>Faça contato</h2>
+                    <p>Oba!</p>
+                    <p>Enviado com sucesso ✓</p>
+                    <p><em>Obrigado.</em></p>
+
+
                 </article>
-                <aside class="col-12 col-md-3 p-3">
-                    <div class="social-slide">
-                        <h3>Contatos Oficiais!</h3>
-                    </div>
+                <aside class="col-12 col-md-3">
+                    <h2>Aside</h2>
 
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
-
-                   
-
                 </aside>
             </div>
         </main>
@@ -117,7 +115,7 @@
                     <i class="fa-solid fa-house fa-2x fa-fw"></i>
                 </a>
                 <!-- Licensa -->
-                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Animal Guard</div>
+                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Petite Guarda</div>
                 <!-- Acesso ao topo da página -->
                 <a href="#wrap" class="p-1">
                     <i class="fa-solid fa-circle-up fa-2x fa-fw"></i>
@@ -167,27 +165,6 @@
             </div>
         </footer>
     </div>
-
-    <!-- Modal e popup com formulário de busca -->
-    <dialog id="dialogFormBusca" class="pt-3 pb-3 rounded-2 border-0">
-                    
-                    
-        <button id="closeDialog" class="float-end border-0 bg-transparent"><i class="fa-solid fa-xmark"></i></button>
-        <h5>Procurar</h5>
-        <form action="procurar.html" method="get" class="input-group">
-            <input type="search" name="q" class="form-control">
-            <button type="submit" class="btn" style="background-color: rgb(57, 155, 0); color: white;"><i
-                    class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-    </dialog>
-
-    <!-- Script para fechar o moidal -->
-    <script>
-        document.getElementById("closeDialog").addEventListener("click", () => {
-            document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
-        });
-    </script>
-
 </body>
 
 </html>

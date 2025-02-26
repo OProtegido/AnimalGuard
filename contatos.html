@@ -15,7 +15,7 @@
     <!--Componentes do Bootstrap-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <title>Animal Guard</title>
+    <title>Animal Guard - Faça contato</title>
 </head>
 
 <body>
@@ -55,8 +55,8 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">SOBRE</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="empresa.html">SOBRE A EMPRESA</a></li>
-                                <li><a class="dropdown-item" href="osite.html">SOBRE O SITE</a></li>
+                                <li><a class="dropdown-item" href="empresa.html">A EMPRESA</a></li>
+                                <li><a class="dropdown-item" href="osite.html">O SITE</a></li>
                                 <li><a class="dropdown-item" href="privacidade.html">PRIVACIDADE</a></li>
                                 <li><a class="dropdown-item" href="contatos.html">CONTATOS</a></li>
                             </ul>
@@ -90,20 +90,51 @@
 
         <!-- Usando sticky-footer para empurrar o rodapé  para o final da página -->
         <main class="container flex-grow-1 d-flex">
-            <div class="row d-flex flex-grow-1">
-                <article class="col-12 col-md-9 flex-grow-1 p-3">
-                    <h2>Bem-vindo ao Animal Guard!</h2>
-                    Seu site de confiança para cuidar do seu pet.
+            <div class="row">
+                <article class="col-12 col-md-9">
+
+
+                    <h2>Faça contato</h2>
+
+                    <p>Preencha todos os campos para entrar em contato com a equipe "Animal Guard"</p>
+
+                    <form action="processa.html" method="get" id="formContato">
+
+                        <p>
+                            <label for="campoNome">Nome:</label>
+                            <input type="text" name="nome" id="campoNome" placeholder="Seu nome completo" minlenght="3"
+                                required>
+                        </p>
+
+
+                        <p>
+                            <label for="campoEmail">E-mail:</label>
+                            <input type="email" name="email" id="campoEmail" placeholder="Seu e-mail" required>
+
+                        </p>
+
+                        <p>
+                            <label for="campoAssunto">Assunto:</label>
+                            <input type="text" name="assunto" id="campoAssunto" placeholder="Assunto da mensagem"
+                                minlength="5" required>
+                        </p>
+
+                        <p>
+                            <label for="campoMensagem">Mensagem:</label>
+                            <textarea name="mensagem" id="campoMensagem" placeholder="Digite sua mensagem" minlength="5"
+                                required></textarea>
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <!--small>&larr; Clique somente uma vez.</small -->
+                        </p>
+
+                    </form>
                 </article>
-                <aside class="col-12 col-md-3 p-3">
-                    <div class="social-slide">
-                        <h3>Contatos Oficiais!</h3>
-                    </div>
-
+                <aside class="col-12 col-md-3">
+                    <h2>Aside</h2>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
-
-                   
-
                 </aside>
             </div>
         </main>
@@ -117,7 +148,7 @@
                     <i class="fa-solid fa-house fa-2x fa-fw"></i>
                 </a>
                 <!-- Licensa -->
-                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Animal Guard</div>
+                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Petite Guarda</div>
                 <!-- Acesso ao topo da página -->
                 <a href="#wrap" class="p-1">
                     <i class="fa-solid fa-circle-up fa-2x fa-fw"></i>
@@ -161,33 +192,30 @@
                             </a></li>
                     </ul>
                 </nav>
+                <!-- Modal e popup com formulário de busca -->
+                <dialog id="dialogFormBusca" class="pt-3 pb-3 rounded-2 border-0">
+                    
+                    
+                    <button id="closeDialog" class="float-end border-0 bg-transparent"><i class="fa-solid fa-xmark"></i></button>
+                    <h5>Procurar</h5>
+                    <form action="procurar.html" method="get" class="input-group">
+                        <input type="search" name="q" class="form-control">
+                        <button type="submit" class="btn" style="background-color: rgb(57, 155, 0); color: white;"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </dialog>
 
+                <!-- Script para fechar o moidal -->
+                <script>
+                    document.getElementById("closeDialog").addEventListener("click", () => {
+                        document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
+                    });
+                </script>
 
 
             </div>
         </footer>
     </div>
-
-    <!-- Modal e popup com formulário de busca -->
-    <dialog id="dialogFormBusca" class="pt-3 pb-3 rounded-2 border-0">
-                    
-                    
-        <button id="closeDialog" class="float-end border-0 bg-transparent"><i class="fa-solid fa-xmark"></i></button>
-        <h5>Procurar</h5>
-        <form action="procurar.html" method="get" class="input-group">
-            <input type="search" name="q" class="form-control">
-            <button type="submit" class="btn" style="background-color: rgb(57, 155, 0); color: white;"><i
-                    class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-    </dialog>
-
-    <!-- Script para fechar o moidal -->
-    <script>
-        document.getElementById("closeDialog").addEventListener("click", () => {
-            document.getElementById("dialogFormBusca").close(); // Fecha o diálogo
-        });
-    </script>
-
 </body>
 
 </html>

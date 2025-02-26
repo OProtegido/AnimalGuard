@@ -1,0 +1,55 @@
+#formCadastro { /* Estiliza o formulário */
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid green;
+    border-radius: 8px;
+    background-color: rgb(80, 223, 24);
+}
+
+#formCadastro label { /* Estiliza as etiquetas */
+    display: block; /* Exibe em bloco */
+    padding: .25rem .5rem; /* Espaçamento interno */
+}
+
+#formCadastro input,
+#formCadastro select { /* Estiliza os campos de texto */
+    width: 100%; /* Largura total */
+    background-color: white; /* Cor de fundo */
+    border: 1px solid green; /* Borda */
+    border-radius:  .3rem; /* Borda arredondada */
+    border-bottom:3px solid rgb(128, 0, 0); /* Adiciona uma borda inferior */
+}
+
+#formCadastro textarea { /* Estiliza o campo de texto */
+    height: 5rem; /* Altura do campo de texto */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+#formCadastro button { /* Estiliza o botão */
+    margin: 1rem auto; /* Centraliza o botão */
+    padding: .5rem 1rem; /* Espaçamento interno */
+    border: 1px solid green; /* Borda */
+    border-radius: 3px; /* Borda arredondada */
+    background-color: rgb(80, 223, 24); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-weight: bold; 
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    pointer-events: none; /* Desabilita o botão */
+}
+
+#formCadastro input:valid,
+#formCadastro select:valid { /* Estiliza os campos válidos */
+    border-color: rgb(252, 252, 252); /* Cor da borda */
+    border: 1px solid rgb(0, 77, 128); /* Borda */
+    border-radius:  .3rem; /* Borda arredondada */
+    border-bottom: 3px solid rgb(0, 77, 128); /* Adiciona uma borda inferior */
+
+}
+
+/* Botão para o formulário de válido */
+#formCadastro:valid button {
+    pointer-events: all; /* Habilita o botão */
+    background-color: rgb(0, 77, 128); /* Cor de fundo */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
