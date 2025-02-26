@@ -99,65 +99,43 @@
 
                     <p>Registre seu Pet aqui!</p>
 
-                    <form action="processa.html" method="get" id="formCadastro">
+                    <form action="processa.html" method="get" id="formContato" class="was-validated">
 
-                        <p>
-                            <label for="campoNome">Nome:</label>
-                            <input type="text" name="nome" id="campoNome" placeholder="Nome do Pet" minlenght="3"
-                                required>
-                        </p>
+                        <div class="mb-3 mt-3">
+                            <label for="campoNome" class="form-label">Nome:</label>
+                            <input type="text" name="nome" class="form-control" id="campoNome"
+                                placeholder="Seu nome completo" minlength="3" required>
+                            <div class="invalid-feedback">Preencha com seu nome.</div>
+                            <div class="valid-feedback">Valido!</div>
+                        </div>
 
+                        <div class="mb-3 mt-3">
+                            <label for="campoEmail" class="form-label">E-mail:</label>
+                            <input type="email" name="email" class="form-control" id="campoEmail"
+                                placeholder="Um e-mail válido" required>
+                            <div class="invalid-feedback">Preencha com seu e-mail.</div>
+                            <div class="valid-feedback">Valido!</div>
+                        </div>
 
-                        <p>
-                            <label for="campoEspecie">Espécie:</label>
-                            <input type="text" name="especie" id="campoEspecie" placeholder="Espécie do Pet" required>
+                        <div class="mb-3 mt-3">
+                            <label for="campoAssunto" class="form-label">Assunto:</label>
+                            <input type="text" name="assunto" class="form-control" id="campoAssunto"
+                                placeholder="Assunto do contato" minlength="5" required>
+                            <div class="invalid-feedback">Preencha com o assunto.</div>
+                            <div class="valid-feedback">Valido!</div>
+                        </div>
 
-                        </p>
+                        <div class="mb-3 mt-3">
+                            <label for="campoMensagem" class="form-label">Mensagem:</label>
+                            <textarea name="mensagem" id="campoMensagem" class="form-control"
+                                placeholder="Mensagem do contato" minlength="5" required></textarea>
+                                <div class="invalid-feedback">Preencha com sua mensagem assunto.</div>
+                                <div class="valid-feedback">Valido!</div>
+                        </div>
 
-                        <p>
-                            <label for="campoRaça">Raça (opcional):</label>
-                            <input type="text" name="Raça" id="campoRaça" placeholder="Raça do Pet" minlength="5">
-                        </p>
-
-                        <p>
-                            <label for="campoNascimento">Data de Nascimento:</label>
-                            <input type="date" name="Nascimento" id="campoNascimento" required>
-                        </p>
-
-                        <p>
-                            <label for="campoSexo">Sexo:</label>
-                            <select id="Sexo" name="Sexo" required>
-                                <option value="">Selecione</option>
-                                <option value="Macho">Macho</option>
-                                <option value="Fêmea">Fêmea</option>
-                            </select>
-                        </p>
-
-
-                        <p>
-                            <label for="campoPorte">Porte:</label>
-                            <select id="Porte" name="Porte" required>
-                                <option value="">Selecione</option>
-                                <option value="Porte">Pequeno</option>
-                                <option value="Porte">Médio</option>
-                                <option value="Porte">Grande</option>
-                            </select>
-
-                        </p>
-
-                        <p>
-                            <label for="campoNumero">Número de identificação (chip/microchip)</label>
-                            <input type="text" name="numero" id="campoNumero" placeholder="Número de identificação"
-                                required>
-
-                        </p>
-
-
-                        <p>
+                        <div class="mb-3 mt-3">
                             <button type="submit">Enviar</button>
-                            <!--small>&larr; Clique somente uma vez.</small -->
-                        </p>
-
+                        </div>
                     </form>
                 </article>
                 <aside class="col-12 col-md-3">

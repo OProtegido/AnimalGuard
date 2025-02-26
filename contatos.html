@@ -98,39 +98,44 @@
 
                     <p>Preencha todos os campos para entrar em contato com a equipe "Animal Guard"</p>
 
-                    <form action="processa.html" method="get" id="formContato">
+                    <form action="processa.html" method="get" id="formContato" class="was-validated">
 
-                        <p>
-                            <label for="campoNome">Nome:</label>
-                            <input type="text" name="nome" id="campoNome" placeholder="Seu nome completo" minlenght="3"
-                                required>
-                        </p>
+                        <div class="mb-3 mt-3">
+                            <label for="campoNome" class="form-label">Nome:</label>
+                            <input type="text" name="nome" class="form-control" id="campoNome"
+                                placeholder="Seu nome completo" minlength="3" required>
+                            <div class="invalid-feedback">Preencha com seu nome.</div>
+                            <div class="valid-feedback">Valido!</div>
+                        </div>
 
+                        <div class="mb-3 mt-3">
+                            <label for="campoEmail" class="form-label">E-mail:</label>
+                            <input type="email" name="email" class="form-control" id="campoEmail"
+                                placeholder="Um e-mail válido" required>
+                            <div class="invalid-feedback">Preencha com seu e-mail.</div>
+                            <div class="valid-feedback">Valido!</div>
+                        </div>
 
-                        <p>
-                            <label for="campoEmail">E-mail:</label>
-                            <input type="email" name="email" id="campoEmail" placeholder="Seu e-mail" required>
+                        <div class="mb-3 mt-3">
+                            <label for="campoAssunto" class="form-label">Assunto:</label>
+                            <input type="text" name="assunto" class="form-control" id="campoAssunto"
+                                placeholder="Assunto do contato" minlength="5" required>
+                            <div class="invalid-feedback">Preencha com o assunto.</div>
+                            <div class="valid-feedback">Valido!</div>
+                        </div>
 
-                        </p>
+                        <div class="mb-3 mt-3">
+                            <label for="campoMensagem" class="form-label">Mensagem:</label>
+                            <textarea name="mensagem" id="campoMensagem" class="form-control"
+                                placeholder="Mensagem do contato" minlength="5" required></textarea>
+                                <div class="invalid-feedback">Preencha com sua mensagem assunto.</div>
+                                <div class="valid-feedback">Valido!</div>
+                        </div>
 
-                        <p>
-                            <label for="campoAssunto">Assunto:</label>
-                            <input type="text" name="assunto" id="campoAssunto" placeholder="Assunto da mensagem"
-                                minlength="5" required>
-                        </p>
-
-                        <p>
-                            <label for="campoMensagem">Mensagem:</label>
-                            <textarea name="mensagem" id="campoMensagem" placeholder="Digite sua mensagem" minlength="5"
-                                required></textarea>
-                        </p>
-
-                        <p>
+                        <div class="mb-3 mt-3">
                             <button type="submit">Enviar</button>
-                            <!--small>&larr; Clique somente uma vez.</small -->
-                        </p>
-
-                    </form>
+                        </div>
+                    </form>/form>
                 </article>
                 <aside class="col-12 col-md-3">
                     <h2>Aside</h2>
